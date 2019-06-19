@@ -1,0 +1,18 @@
+<!doctype html>
+<head>
+    <title>result page</title>
+</head>
+<body>
+<h2><a href="/" id="title">2018 Film Search</a></h2>
+
+<form action="/results/1" name="search" method="post">
+    <span>Query:</span>
+    <input type="text" name="query" size=30 value="{{ orig_query1 }}">
+    <input type="submit" value="Search">
+</form>
+
+<h3>Search Results:</h3>
+<h5>Total hits: 0<br></h5>
+<h5>Unknown words: {{ unknown_terms }}</h5>
+
+</body>
